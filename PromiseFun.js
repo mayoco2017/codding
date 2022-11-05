@@ -2,7 +2,7 @@
 /*
  * @Date: 2022-11-05 13:58:28
  * @LastEditors: lj 1093876183@qq.com
- * @LastEditTime: 2022-11-05 16:55:16
+ * @LastEditTime: 2022-11-05 20:33:05
  * @FilePath: /codding/PromiseFun.js
  * @Description: Promise 串行请求，有序返回
  * 思想：利用 then中如果返回的是Promise对象，则会吧resolve和reject继续传递下去
@@ -37,11 +37,11 @@ function getDatasByOrder(urls) {
      start(){
         if(this.pending<this.max && this.noStart.length){
             this.pending++
-            const f = this.noStart.unshift()
+            const f = this.noStart.shift()
             fetch(f.url).then((data)=>{
                 this.pending --;
                 this.start();
-                resolve(data)
+                f.resolve(data)
             })
         }
      }
