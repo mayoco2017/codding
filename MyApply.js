@@ -1,7 +1,7 @@
 /*
  * @Date: 2022-11-05 14:01:24
  * @LastEditors: lj 1093876183@qq.com
- * @LastEditTime: 2022-11-05 17:15:31
+ * @LastEditTime: 2022-11-06 22:06:53
  * @FilePath: /codding/MyApply.js
  * @Description: apply,call,bind实现
  * 思想将要执行的函数，绑定到传入的context在用。执行再删掉
