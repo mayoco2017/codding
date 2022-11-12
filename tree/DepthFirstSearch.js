@@ -1,7 +1,7 @@
 /*
  * @Date: 2022-11-12 10:57:25
  * @LastEditors: lj 1093876183@qq.com
- * @LastEditTime: 2022-11-12 15:47:07
+ * @LastEditTime: 2022-11-12 15:49:34
  * @FilePath: /codding/tree/DepthFirstSearch.js
  * @Description: 二叉树的深度优先遍历 DFS
  */
@@ -166,7 +166,7 @@ var preorderTraversal = function (root, res = []) {
 };
 // 前序遍历：中左右
 // 压栈顺序：右左中
-//  中序遍历：左中右
-//  压栈顺序：右中左
+// 中序遍历：左中右
+// 压栈顺序：右中左
 // 后续遍历：左右中
 // 压栈顺序：中右左
